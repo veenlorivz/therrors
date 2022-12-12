@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary: #3742fa;
+    --secondary: #747d8c;
+    --light: #ced6e0;
+    --dark: #2f3542;
+    --info: #1e90ff;
+    --success: #2ed573;
+    --warning: #ffa502;
+    --danger: #ff4757;
+    --white: #ffffff;
+    --transparent: transparent;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.nav-link {
+    font-weight: 400;
+    color: var(--light);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--light);
+}
+
+/* Landing Page */
+#landing {
+    padding-top: 200px;
+    background-image: url('./../img/wave.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.therrors {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 4px 10px 4px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}

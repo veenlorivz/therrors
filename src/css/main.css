@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary: #3742fa;
+    --secondary: #747d8c;
+    --light: #ced6e0;
+    --dark: #2f3542;
+    --info: #1e90ff;
+    --success: #2ed573;
+    --warning: #ffa502;
+    --danger: #ff4757;
+    --white: #ffffff;
+    --transparent: transparent;
+    --hero: #202020;
+    --danger-op: rgba(255, 71, 87, 0.3);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--hero);
+}
+.navbar-brand {
+    font-weight: 600;
+    color: var(--light);
+    font-size: 25px;
+}
+
+.nav-link {
+    font-weight: 400;
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--light);
+}
+
+/* Landing Page */
+#landing {
+    padding-top: 200px;
+    background-color: var(--hero);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#landing p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--white);
+}
+
+.therrors {
+    color: var(--primary);
+    padding: 7px 145px 7px 145px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.errors {
+    color: var(--secondary);
+    margin-bottom: 5px;
+}
+
+p {
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+#hero {
+    margin-top: -100px;
+}
+
+#our-team {
+    background-color: var(--hero);
+}
+
+#our-team h4 {
+    color: var(--white);
+    font-weight: 300;
+}
+
+#our-team .member {
+    border: 1px solid var(--secondary);
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    transform: skewY(-20deg);
+    background-color: var(--hero);
+    cursor: pointer;
+    position: relative;
+    transition: 0.5;
+    border-radius: 20px;
+}
+
+#our-team .member:hover {
+    z-index: 99999;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+#our-team .member:not(:first-child){
+    margin-left: -30px;
+}
+
+#our-team .avatar {
+    width: 100px;
+    height: 100px;
+    transform: skewY(20deg);
+    border-radius: 100%;
+}
+
+#our-team .member-detail {
+    transform: skewY(20deg);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#our-team .member-jobs {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#our-team .member-cert {
+    margin-top: 15px;
+    color: var(--danger);
+    background-color: var(--danger-op);
+    font-weight: 400;
+    font-size: 10px;
+    display: inline-block;
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+}
