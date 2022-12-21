@@ -5,8 +5,8 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                docker image rm therrors/therrors-website:v1.($BUILD_ID - 1)
                 docker build -t therrors/therrors-website:v1.$BUILD_ID .
+                docker build -t therrors/therrors-website:latest .
                 '''
             }
         }
@@ -21,6 +21,8 @@ pipeline {
                     sh '''
                     docker login -u therrors -p $DOCKER_PASS
                     docker push therrors/therrors-website:v1.$BUILD_ID
+                    docker push therrors/therrors-website:latest
+                    docker image rm therrors/therrors-website:v1.$BUILD_ID
                     '''
                 }
             }
