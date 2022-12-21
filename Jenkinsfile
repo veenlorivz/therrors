@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'docker build -t therrors/therrors-website:v1.$BUILD_ID .'
+                sh '''
+                docker image rm therrors/therrors-website:v1.($BUILD_ID - 1)
+                docker build -t therrors/therrors-website:v1.$BUILD_ID .
+                '''
             }
         }
         stage('test'){
@@ -25,6 +28,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 sh '''
+                docker stop therrors-website && docker rm therrors-website
                 docker run -d --name therrors-website -p 80:80 therrors/therrors-website:v1.$BUILD_ID
                 '''
             }
