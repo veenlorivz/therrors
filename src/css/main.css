@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
     --primary: #3742fa;
     --secondary: #747d8c;
     --light: #ced6e0;
@@ -21,10 +21,12 @@
     --danger-op: rgba(255, 71, 87, 0.3);
 }
 
+
 /* Navbar */
 .navbar {
     background-color: var(--hero);
 }
+
 .navbar-brand {
     font-weight: 600;
     color: var(--light);
@@ -83,13 +85,66 @@ p {
     margin-top: -100px;
 }
 
+.arrow-down {
+    position: relative;
+    animation: arrow .6s ease-in infinite alternate;
+}
+
+@keyframes arrow {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 10px;
+    }
+}
+
+hr {
+    color: var(--danger);
+}
+
+/* about */
+
+#about {
+    background-color: var(--hero);
+    padding-top: 8rem;
+}
+
+#about .about-our-team h3 {
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-top: 30px;
+    font-weight: 200;
+    color: var(--white);
+}
+
+#about .about-our-team span {
+    font-weight: 500;
+    color: var(--danger);
+
+}
+
+#about .about-our-team p {
+    font-size: 18px;
+    color: #acacac;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+
+
+/* our team */
+
 #our-team {
     background-color: var(--hero);
+    padding-top: 50px;
 }
 
 #our-team h4 {
     color: var(--white);
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 #our-team .member {
@@ -110,7 +165,7 @@ p {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-#our-team .member:not(:first-child){
+#our-team .member:not(:first-child) {
     margin-left: -30px;
 }
 
@@ -143,4 +198,40 @@ p {
     display: inline-block;
     padding: 6px 10px 6px 10px;
     border-radius: 5px;
+}
+
+
+/* project */
+
+#project {
+    background-color: var(--hero);
+}
+
+#project h4 {
+    color: var(--white);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#project .card-project {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    margin-bottom: 20px;
+}
+
+#project .card-header {
+    color: var(--danger);
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#project .card-body {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 15px;
 }
