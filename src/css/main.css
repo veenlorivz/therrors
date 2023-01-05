@@ -353,6 +353,37 @@ hr {
 }
 
 
+/* footer */
+#footer {
+    background-color: var(--hero);
+    padding-top: 2rem;
+}
+
+#footer span {
+    color: var(--danger);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+#footer a {
+    color: var(--white);
+    font-size: .9rem;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+#footer p {
+    color: var(--secondary);
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+#footer .footer {
+    margin-top: 20px;
+}
+
+
 
 
 
@@ -605,5 +636,34 @@ hr {
         border-radius: 5px;
     }
 
+    /* footer */
+    #footer {
+        background-color: var(--hero);
+        padding-top: 6rem;
+    }
+
+    #footer span {
+        color: var(--danger);
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    #footer a {
+        color: var(--white);
+        font-size: .9rem;
+        text-transform: capitalize;
+        font-weight: 300;
+    }
+
+    #footer p {
+        color: var(--secondary);
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 2rem;
+    }
+
+    #footer .footer {
+        margin-top: 0;
+    }
 
 }
